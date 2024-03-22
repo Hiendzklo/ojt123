@@ -12,7 +12,7 @@ let loggedInUser = localStorage.getItem('userData');
 
         } else {
             // Nếu không có người dùng đã đăng nhập, chuyển hướng đến trang đăng nhập
-            window.location.href = "./pages/login.html";
+            
         }
 
         // Hàm đăng xuất
@@ -86,7 +86,11 @@ buyButtons.forEach(button => {
 
 
 function redirectToAnotherPage() {
-    window.location.href = "cart.html ";
+    window.location.href = "./pages/cart.html ";
 }
 
 
+document.getElementById('email').onclick = function() {
+    // Thực hiện hành động bạn muốn khi nhấn vào phần tử có id là 'email' ở đây
+    window.location.href = "./pages/admin.user.html ";
+};
