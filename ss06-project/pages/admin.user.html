@@ -42,38 +42,11 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="#" onclick="productsclick()">
                         <span class="icon">
                             <ion-icon name="chatbubble-outline"></ion-icon>
                         </span>
-                        <span class="title">Messages</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="help-outline"></ion-icon>
-                        </span>
-                        <span class="title">Help</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="settings-outline"></ion-icon>
-                        </span>
-                        <span class="title">Settings</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
-                        </span>
-                        <span class="title">Password</span>
+                        <span class="title" >Products</span>
                     </a>
                 </li>
 
@@ -120,7 +93,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="buy()">
                     <div>
                         <div class="numbers">80</div>
                         <div class="cardName">Sales</div>
@@ -142,7 +115,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="billclick()">
                     <div>
                         <div class="numbers">$7,842</div>
                         <div class="cardName">Earning</div>
@@ -158,161 +131,28 @@
             <div class="details">
                 <div class="recentOrders">
                     <div class="cardHeader">
-                        <h2>Recent Orders</h2>
+                        <h2>Quản Lý Tài Khoản</h2>
                         <a href="#" class="btn">View All</a>
                     </div>
 
                     <table>
                         <thead>
                             <tr>
-                                <td>Name</td>
-                                <td>Price</td>
-                                <td>Payment</td>
-                                <td>Status</td>
+                                <td>STT</td>
+                                <td>Tài Khoản</td>
+                                <td>Mật Khẩu</td>
+                                <td>Hành Động</td>
+                                
                             </tr>
                         </thead>
 
                         <tbody>
-                            <tr>
-                                <td>Đèn led</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td><span class="status delivered">Delivered</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Sạc Dự Phòng</td>
-                                <td>$110</td>
-                                <td>Due</td>
-                                <td><span class="status pending">Pending</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Tai nghe Không dây</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td><span class="status return">Return</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Xịt thơm miệng</td>
-                                <td>$620</td>
-                                <td>Due</td>
-                                <td><span class="status inProgress">In Progress</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Kính đọc sách</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td><span class="status delivered">Delivered</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Khẩu trang 5D</td>
-                                <td>$110</td>
-                                <td>Due</td>
-                                <td><span class="status pending">Pending</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Kem chống nắng</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td><span class="status return">Return</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Dép Lông</td>
-                                <td>$620</td>
-                                <td>Due</td>
-                                <td><span class="status inProgress">In Progress</span></td>
-                            </tr>
+                            
                         </tbody>
                     </table>
                 </div>
 
-                <!-- ================= New Customers ================ -->
-                <div class="recentCustomers">
-                    <div class="cardHeader">
-                        <h2>Recent Customers</h2>
-                    </div>
-
-                    <table>
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="../asset/images/ảnh 1.jpg" alt=""></div>
-                            </td>
-                            <td>
-                                <h4>Đèn Led <br> <span>China</span></h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="../asset/images/ảnh 2.jpg" alt=""></div>
-                            </td>
-                            <td>
-                                <h4>Sạc Dự Phòng<br> <span>Nhật Bản</span></h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="../asset/images/ảnh 3.jpg" alt=""></div>
-                            </td>
-                            <td>
-                                <h4>Tai Nghe không dây <br> <span>USA</span></h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="../asset/images/ảnh 4.webp" alt=""></div>
-                            </td>
-                            <td>
-                                <h4>Xịt Thơm miệng <br> <span>Việt Nam</span></h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="../asset/images/ảnh 5.jpg" alt=""></div>
-                            </td>
-                            <td>
-                                <h4>Kính đọc sách <br> <span>Italy</span></h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="../asset/images/ảnh 6.webp" alt=""></div>
-                            </td>
-                            <td>
-                                <h4>Khẩu trang 5D<br> <span>Việt Nam</span></h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="../asset/images/ảnh 7.webp" alt=""></div>
-                            </td>
-                            <td>
-                                <h4>Kem chống nắng<br> <span>Hàn Quốc</span></h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="../asset/images/ảnh 8.jpg" alt=""></div>
-                            </td>
-                            <td>
-                                <h4>Dép Lông<br> <span>India</span></h4>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+                
         </div>
     </div>
 

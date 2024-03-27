@@ -4,7 +4,7 @@ let loggedInUser = localStorage.getItem('userData');
             loggedInUser = JSON.parse(loggedInUser);
             
             // Hiển thị thông tin người dùng (email)
-            document.getElementById('email').innerText = loggedInUser.email;
+            document.getElementById('email').innerText = loggedInUser[0].email;
             // Hiển thị nút đăng xuất và ẩn nút đăng nhập và đăng ký
             document.getElementById('logout-button').style.display = 'inline-block';
             document.querySelector('.user-info .link').style.display = 'none'; 
@@ -17,7 +17,7 @@ let loggedInUser = localStorage.getItem('userData');
 
         // Hàm đăng xuất
         function logout() {
-            localStorage.removeItem('userData');
+            
             window.location.href = "./pages/login.html";
         }
 

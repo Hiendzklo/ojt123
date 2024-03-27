@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giỏ hàng</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-    </style>
+    <link rel="stylesheet" href="../style/cart.css">
 </head>
 <body>
     <h1>Giỏ hàng</h1>
+    <img src="../asset/images/shopee.png" style="width:100px;margin-top: -60px;" onclick="comehome()">
+    <div style="text-align: center;"> <!-- Đảm bảo các hình ảnh được căn giữa -->
+        <img src="../asset/images/gio hang.png" style="width:80px; display: inline-block; margin-right: 10px;">
+        <img src="../asset/images/Quang cao1.jpg" style="width:500px;height: 100px;object-fit: cover; display: inline-block; margin-right: 10px;">
+        <img src="../asset/images/quang cao 2.png" style="width:500px;height: 100px;object-fit: cover; display: inline-block; margin-right: 10px;">
+        <!-- Thêm các hình ảnh khác ở đây, sử dụng cùng một cách để thiết lập chúng cùng một dòng -->
+    </div>
+    
+    
     <table id="cart-table">
         <thead>
             <tr>
@@ -25,6 +24,7 @@
                 <th>Tên sản phẩm</th>
                 <th>Giá</th>
                 <th>Số lượng</th>
+                <th>Tổng tiền</th>
             </tr>
         </thead>
         <tbody>

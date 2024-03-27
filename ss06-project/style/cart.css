@@ -1,0 +1,54 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f13942; /* Màu cam */
+    padding: 20px;
+    color: #fff; /* Màu chữ */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#cart-table th, #cart-table td {
+    border: 1px solid #fff; /* Màu viền */
+    padding: 10px;
+    text-align: center;
+}
+
+#cart-table th {
+    background-color: #d35400; /* Màu cam đậm */
+}
+
+#cart-table tbody tr:nth-child(even) {
+    background-color: #f39c12; /* Màu cam nhạt */
+}
+
+#cart-table tbody tr:nth-child(odd) {
+    background-color: #2ecc71; /* Màu xanh lá */
+}
+
+#cart-table tbody tr:hover {
+    background-color: #3498db; /* Màu xanh dương */
+}
+
+#cart-table img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+

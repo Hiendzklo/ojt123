@@ -13,7 +13,11 @@ document.getElementById('signup-form').addEventListener('submit', function(event
         userData = JSON.parse(userData);
         
         // Kiểm tra xem email và mật khẩu nhập vào có khớp với dữ liệu trong localStorage không
-        if (email === userData.email && password === userData.password) {
+        let userFound = userData.find(function(user) {
+            return user.email === email && user.password === password;
+        });
+
+        if (userFound) {
             // Đăng nhập thành công, chuyển hướng đến trang khác
             window.location.href = "../structure.html";
             alert("Đăng nhập thành công!");
@@ -27,10 +31,9 @@ document.getElementById('signup-form').addEventListener('submit', function(event
     }
 });
 
-  
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.signup-link').addEventListener('click', function(event) {
         event.preventDefault(); // Ngăn chặn hành động mặc định của liên kết
-        window.location.href = "register.html"; // Chuyển hướng đến trang HTML đăng nhập
+        window.location.href = "register.html"; // Chuyển hướng đến trang HTML đăng ký
     });
 });
